@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India AQI Visualizer (2005–2024)</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div class="max-w-7xl mx-auto p-4 space-y-4">
+    <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+      <div>
+        <h1 class="text-2xl font-bold">India AQI Visualizer</h1>
+        <p class="text-sm text-slate-600">Top 10 cities • Years 2005–2024 • PM2.5 • National AQI or US EPA AQI</p>
+      </div>
+      <div class="flex flex-wrap gap-3 items-end">
+        <div id="yearControl">
+          <label class="block text-xs font-medium">Year</label>
+          <select id="yearSelect" class="border rounded px-2 py-1"></select>
+        </div>
+        <div id="citiesControl">
+          <label class="block text-xs font-medium">Cities</label>
+          <select id="citySelect" class="border rounded px-2 py-1 min-w-[240px]" multiple></select>
+          <div class="text-[11px] text-slate-500">Ctrl/Cmd-click to multi-select</div>
+        </div>
+        <div id="standardControl">
+          <label class="block text-xs font-medium">AQI Standard</label>
+          <select id="standardSelect" class="border rounded px-2 py-1">
+            <option value="india">India National AQI (PM2.5)</option>
+            <option value="us">US EPA AQI (PM2.5)</option>
+          </select>
+        </div>
+        <div id="viewControl">
+          <label class="block text-xs font-medium">View</label>
+          <select id="viewSelect" class="border rounded px-2 py-1">
+            <option value="yearly">Yearly Snapshot</option>
+            <option value="trajectory">20-Year Trajectory</option>
+            <option value="compareYears">Compare Years (per city)</option>
+          </select>
+        </div>
+        <div id="compareYearsControl" class="hidden flex gap-3 items-end">
+          <div>
+            <label class="block text-xs font-medium">City</label>
+            <select id="citySingleSelect" class="border rounded px-2 py-1 min-w-[180px]"></select>
+          </div>
+          <div>
+            <label class="block text-xs font-medium">Years</label>
+            <select id="yearsSelect" class="border rounded px-2 py-1 min-w-[200px]" multiple></select>
+            <div class="text-[11px] text-slate-500">Ctrl/Cmd-click to multi-select</div>
+          </div>
+        </div>
+        <button id="exportBtn" class="px-3 py-1 rounded bg-slate-900 text-white text-sm">Export PNG</button>
+      </div>
+    </header>
+
+    <section class="grid grid-cols-1 gap-4">
+      <div id="chart" class="bg-white rounded-lg shadow p-3">
+        <div id="chartTitle" class="text-sm text-slate-600 mb-2"></div>
+        <div id="plot" class="w-full h-[520px]"></div>
+      </div>
+    </section>
+
+    <footer class="text-xs text-slate-500">
+      Data: CPCB (transformed). This tool computes AQI from PM2.5 using selected standard.
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

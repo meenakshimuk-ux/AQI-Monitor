@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CPCB CSV → AQI JSON (PM2.5 annual)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4 max-w-3xl mx-auto">
+  <h1 class="text-xl font-semibold mb-2">CPCB CSV → AQI JSON</h1>
+  <p class="text-sm text-slate-600 mb-4">Drop one or more CPCB CSVs with columns including city, date, and PM2.5. This tool aggregates to annual mean PM2.5 per city for 2005–2024 and outputs JSON compatible with the visualizer.</p>
+
+  <input id="fileInput" type="file" multiple accept=".csv" class="mb-3" />
+  <button id="runBtn" class="px-3 py-1 bg-slate-900 text-white rounded">Convert</button>
+  <pre id="out" class="mt-4 p-3 bg-slate-100 rounded text-xs overflow-auto max-h-[50vh]"></pre>
+
+<script>
+function parseCSV(text){
+  const lines = text.split(/\r?\n/).filter(Boolean);
+  const headers = lines[0].split(',').map(h=>h.trim().toLowerCase());
+  const rows = lines.slice(1).map(l=>{
+    const vals = l.split(',');
+    const o = {}; headers.forEach((h,i)=>o[h]=vals[i]); return o;
+  });
+  return rows;
+}
+
+function yearFrom(val){
+  const m = String(val||'').match(/(20\d{2}|19\d{2})/); return m?parseInt(m[1],10):null;
+}
+
+document.getElementById('runBtn').onclick = async () => {
+  const files = document.getElementById('fileInput').files;
+  if(!files.length){ alert('Select CSV files'); return; }
+  const acc = new Map(); // key: city|year -> {sum,count}
+  for (const f of files){
+    const text = await f.text();
+    const rows = parseCSV(text);
+    for (const r of rows){
+      const city = (r.city || r.location || r.station || '').trim();
+      const y = yearFrom(r.date || r.datetime || r.timestamp || r['sampling date']);
+      const pm = parseFloat(r.pm2_5 || r.pm25 || r['pm2.5'] || r['pm 2.5'] || r['pm2.5 (µg/m3)'] || '');
+      if(!city || !y || isNaN(pm)) continue;
+      if (y < 2005 || y > 2024) continue;
+      const key = city+'|'+y;
+      const v = acc.get(key) || {sum:0,count:0};
+      v.sum += pm; v.count += 1; acc.set(key, v);
+    }
+  }
+  const out = [];
+  for (const [key,v] of acc){
+    const [city, y] = key.split('|');
+    out.push({city, year: parseInt(y,10), pm25: +(v.sum/v.count).toFixed(1)});
+  }
+  out.sort((a,b)=> a.city.localeCompare(b.city) || a.year-b.year);
+  document.getElementById('out').textContent = JSON.stringify(out, null, 2);
+};
+</script>
+</body>
+</html>

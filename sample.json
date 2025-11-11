@@ -1,0 +1,42 @@
+[
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  {"city":"Delhi","year":2005,"pm25":98},{"city":"Mumbai","year":2005,"pm25":38},{"city":"Kolkata","year":2005,"pm25":52},{"city":"Chennai","year":2005,"pm25":34},{"city":"Bengaluru","year":2005,"pm25":28},{"city":"Hyderabad","year":2005,"pm25":41},{"city":"Pune","year":2005,"pm25":30},{"city":"Ahmedabad","year":2005,"pm25":46},{"city":"Jaipur","year":2005,"pm25":44},{"city":"Lucknow","year":2005,"pm25":57},
+  {"city":"Delhi","year":2006,"pm25":100},{"city":"Mumbai","year":2006,"pm25":40},{"city":"Kolkata","year":2006,"pm25":54},{"city":"Chennai","year":2006,"pm25":36},{"city":"Bengaluru","year":2006,"pm25":29},{"city":"Hyderabad","year":2006,"pm25":42},{"city":"Pune","year":2006,"pm25":32},{"city":"Ahmedabad","year":2006,"pm25":47},{"city":"Jaipur","year":2006,"pm25":45},{"city":"Lucknow","year":2006,"pm25":58},
+  {"city":"Delhi","year":2007,"pm25":102},{"city":"Mumbai","year":2007,"pm25":41},{"city":"Kolkata","year":2007,"pm25":55},{"city":"Chennai","year":2007,"pm25":37},{"city":"Bengaluru","year":2007,"pm25":30},{"city":"Hyderabad","year":2007,"pm25":43},{"city":"Pune","year":2007,"pm25":33},{"city":"Ahmedabad","year":2007,"pm25":48},{"city":"Jaipur","year":2007,"pm25":46},{"city":"Lucknow","year":2007,"pm25":59},
+  {"city":"Delhi","year":2008,"pm25":104},{"city":"Mumbai","year":2008,"pm25":42},{"city":"Kolkata","year":2008,"pm25":56},{"city":"Chennai","year":2008,"pm25":38},{"city":"Bengaluru","year":2008,"pm25":31},{"city":"Hyderabad","year":2008,"pm25":44},{"city":"Pune","year":2008,"pm25":34},{"city":"Ahmedabad","year":2008,"pm25":49},{"city":"Jaipur","year":2008,"pm25":47},{"city":"Lucknow","year":2008,"pm25":60},
+  {"city":"Delhi","year":2009,"pm25":106},{"city":"Mumbai","year":2009,"pm25":43},{"city":"Kolkata","year":2009,"pm25":57},{"city":"Chennai","year":2009,"pm25":39},{"city":"Bengaluru","year":2009,"pm25":32},{"city":"Hyderabad","year":2009,"pm25":45},{"city":"Pune","year":2009,"pm25":35},{"city":"Ahmedabad","year":2009,"pm25":50},{"city":"Jaipur","year":2009,"pm25":48},{"city":"Lucknow","year":2009,"pm25":61},
+  {"city":"Delhi","year":2010,"pm25":108},{"city":"Mumbai","year":2010,"pm25":44},{"city":"Kolkata","year":2010,"pm25":58},{"city":"Chennai","year":2010,"pm25":40},{"city":"Bengaluru","year":2010,"pm25":33},{"city":"Hyderabad","year":2010,"pm25":46},{"city":"Pune","year":2010,"pm25":36},{"city":"Ahmedabad","year":2010,"pm25":51},{"city":"Jaipur","year":2010,"pm25":49},{"city":"Lucknow","year":2010,"pm25":62},
+  {"city":"Delhi","year":2011,"pm25":110},{"city":"Mumbai","year":2011,"pm25":45},{"city":"Kolkata","year":2011,"pm25":59},{"city":"Chennai","year":2011,"pm25":41},{"city":"Bengaluru","year":2011,"pm25":34},{"city":"Hyderabad","year":2011,"pm25":47},{"city":"Pune","year":2011,"pm25":37},{"city":"Ahmedabad","year":2011,"pm25":52},{"city":"Jaipur","year":2011,"pm25":50},{"city":"Lucknow","year":2011,"pm25":63},
+  {"city":"Delhi","year":2012,"pm25":112},{"city":"Mumbai","year":2012,"pm25":46},{"city":"Kolkata","year":2012,"pm25":60},{"city":"Chennai","year":2012,"pm25":42},{"city":"Bengaluru","year":2012,"pm25":35},{"city":"Hyderabad","year":2012,"pm25":48},{"city":"Pune","year":2012,"pm25":38},{"city":"Ahmedabad","year":2012,"pm25":53},{"city":"Jaipur","year":2012,"pm25":51},{"city":"Lucknow","year":2012,"pm25":64},
+  {"city":"Delhi","year":2013,"pm25":114},{"city":"Mumbai","year":2013,"pm25":47},{"city":"Kolkata","year":2013,"pm25":61},{"city":"Chennai","year":2013,"pm25":43},{"city":"Bengaluru","year":2013,"pm25":36},{"city":"Hyderabad","year":2013,"pm25":49},{"city":"Pune","year":2013,"pm25":39},{"city":"Ahmedabad","year":2013,"pm25":54},{"city":"Jaipur","year":2013,"pm25":52},{"city":"Lucknow","year":2013,"pm25":65},
+  {"city":"Delhi","year":2014,"pm25":116},{"city":"Mumbai","year":2014,"pm25":48},{"city":"Kolkata","year":2014,"pm25":62},{"city":"Chennai","year":2014,"pm25":44},{"city":"Bengaluru","year":2014,"pm25":37},{"city":"Hyderabad","year":2014,"pm25":50},{"city":"Pune","year":2014,"pm25":40},{"city":"Ahmedabad","year":2014,"pm25":55},{"city":"Jaipur","year":2014,"pm25":53},{"city":"Lucknow","year":2014,"pm25":66},
+  {"city":"Delhi","year":2015,"pm25":118},{"city":"Mumbai","year":2015,"pm25":49},{"city":"Kolkata","year":2015,"pm25":63},{"city":"Chennai","year":2015,"pm25":45},{"city":"Bengaluru","year":2015,"pm25":38},{"city":"Hyderabad","year":2015,"pm25":51},{"city":"Pune","year":2015,"pm25":41},{"city":"Ahmedabad","year":2015,"pm25":56},{"city":"Jaipur","year":2015,"pm25":54},{"city":"Lucknow","year":2015,"pm25":67},
+  {"city":"Delhi","year":2016,"pm25":120},{"city":"Mumbai","year":2016,"pm25":50},{"city":"Kolkata","year":2016,"pm25":64},{"city":"Chennai","year":2016,"pm25":46},{"city":"Bengaluru","year":2016,"pm25":39},{"city":"Hyderabad","year":2016,"pm25":52},{"city":"Pune","year":2016,"pm25":42},{"city":"Ahmedabad","year":2016,"pm25":57},{"city":"Jaipur","year":2016,"pm25":55},{"city":"Lucknow","year":2016,"pm25":68},
+  {"city":"Delhi","year":2017,"pm25":122},{"city":"Mumbai","year":2017,"pm25":51},{"city":"Kolkata","year":2017,"pm25":65},{"city":"Chennai","year":2017,"pm25":47},{"city":"Bengaluru","year":2017,"pm25":40},{"city":"Hyderabad","year":2017,"pm25":53},{"city":"Pune","year":2017,"pm25":43},{"city":"Ahmedabad","year":2017,"pm25":58},{"city":"Jaipur","year":2017,"pm25":56},{"city":"Lucknow","year":2017,"pm25":69},
+  {"city":"Delhi","year":2018,"pm25":124},{"city":"Mumbai","year":2018,"pm25":52},{"city":"Kolkata","year":2018,"pm25":66},{"city":"Chennai","year":2018,"pm25":48},{"city":"Bengaluru","year":2018,"pm25":41},{"city":"Hyderabad","year":2018,"pm25":54},{"city":"Pune","year":2018,"pm25":44},{"city":"Ahmedabad","year":2018,"pm25":59},{"city":"Jaipur","year":2018,"pm25":57},{"city":"Lucknow","year":2018,"pm25":70},
+  {"city":"Delhi","year":2019,"pm25":126},{"city":"Mumbai","year":2019,"pm25":53},{"city":"Kolkata","year":2019,"pm25":67},{"city":"Chennai","year":2019,"pm25":49},{"city":"Bengaluru","year":2019,"pm25":42},{"city":"Hyderabad","year":2019,"pm25":55},{"city":"Pune","year":2019,"pm25":45},{"city":"Ahmedabad","year":2019,"pm25":60},{"city":"Jaipur","year":2019,"pm25":58},{"city":"Lucknow","year":2019,"pm25":71},
+  {"city":"Delhi","year":2020,"pm25":90},{"city":"Mumbai","year":2020,"pm25":35},{"city":"Kolkata","year":2020,"pm25":50},{"city":"Chennai","year":2020,"pm25":33},{"city":"Bengaluru","year":2020,"pm25":26},{"city":"Hyderabad","year":2020,"pm25":39},{"city":"Pune","year":2020,"pm25":28},{"city":"Ahmedabad","year":2020,"pm25":42},{"city":"Jaipur","year":2020,"pm25":40},{"city":"Lucknow","year":2020,"pm25":55},
+  {"city":"Delhi","year":2021,"pm25":110},{"city":"Mumbai","year":2021,"pm25":40},{"city":"Kolkata","year":2021,"pm25":58},{"city":"Chennai","year":2021,"pm25":38},{"city":"Bengaluru","year":2021,"pm25":32},{"city":"Hyderabad","year":2021,"pm25":46},{"city":"Pune","year":2021,"pm25":35},{"city":"Ahmedabad","year":2021,"pm25":50},{"city":"Jaipur","year":2021,"pm25":48},{"city":"Lucknow","year":2021,"pm25":62},
+  {"city":"Delhi","year":2022,"pm25":115},{"city":"Mumbai","year":2022,"pm25":42},{"city":"Kolkata","year":2022,"pm25":60},{"city":"Chennai","year":2022,"pm25":39},{"city":"Bengaluru","year":2022,"pm25":33},{"city":"Hyderabad","year":2022,"pm25":48},{"city":"Pune","year":2022,"pm25":36},{"city":"Ahmedabad","year":2022,"pm25":52},{"city":"Jaipur","year":2022,"pm25":50},{"city":"Lucknow","year":2022,"pm25":64},
+  {"city":"Delhi","year":2023,"pm25":118},{"city":"Mumbai","year":2023,"pm25":44},{"city":"Kolkata","year":2023,"pm25":62},{"city":"Chennai","year":2023,"pm25":41},{"city":"Bengaluru","year":2023,"pm25":35},{"city":"Hyderabad","year":2023,"pm25":50},{"city":"Pune","year":2023,"pm25":38},{"city":"Ahmedabad","year":2023,"pm25":54},{"city":"Jaipur","year":2023,"pm25":52},{"city":"Lucknow","year":2023,"pm25":66},
+  {"city":"Delhi","year":2024,"pm25":120},{"city":"Mumbai","year":2024,"pm25":46},{"city":"Kolkata","year":2024,"pm25":64},{"city":"Chennai","year":2024,"pm25":42},{"city":"Bengaluru","year":2024,"pm25":36},{"city":"Hyderabad","year":2024,"pm25":52},{"city":"Pune","year":2024,"pm25":39},{"city":"Ahmedabad","year":2024,"pm25":56},{"city":"Jaipur","year":2024,"pm25":54},{"city":"Lucknow","year":2024,"pm25":68}
+]
